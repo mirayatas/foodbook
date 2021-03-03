@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/background2"
+    tools:context=".Register">
+
+    <include layout="@layout/appbar" android:id="@+id/appbarregister"/>
+
+
+    <EditText
+        android:id="@+id/registeremail"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="e-mail"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/registerusername"
+        android:layout_marginTop="20dp"
+        android:background="#F2508999"
+        />
+
+    <EditText
+        android:id="@+id/registerpass"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:layout_below="@+id/registeremail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#F2508999"
+        />
+
+    <EditText
+        android:id="@+id/registerusername"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="username"
+        android:inputType="textPersonName"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="#F2508999"
+        />
+
+    <Button
+        android:id="@+id/registerbutton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/registerpass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Kayıt Ol"
+        android:textColor="#070000"
+        app:backgroundTint="#F2508999"
+
+        tools:backgroundTint="#F2508999" />
+</RelativeLayout>

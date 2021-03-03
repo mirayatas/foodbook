@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context=".MainActivity"
+    >
+
+
+    <TextView
+
+        android:id="@+id/txtwelcome"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#F2508999"
+        android:gravity="center"
+        android:shadowColor="#CF2929"
+        android:text="Foodbook"
+        android:textColor="#F2FDFCFC"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtwelcome"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="100dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Giriş Yap"
+        android:textColor="#090000"
+        android:textStyle="bold"
+        app:backgroundTint="#F2508999" />
+
+    <Button
+        android:id="@+id/btnregister"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnlogin"
+        android:layout_centerInParent="true"
+
+        android:fontFamily="sans-serif-black"
+        android:text="Kayıt Ol"
+        android:textColor="#0E0000"
+        android:textStyle="bold"
+        app:backgroundTint="#F2508999" />
+</RelativeLayout>

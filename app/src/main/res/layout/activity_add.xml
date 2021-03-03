@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add"
+    android:background="@drawable/background2">
+    <include layout="@layout/appbar" android:id="@+id/appbaradd"/>
+
+    <EditText
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/appbaradd"
+        android:id="@+id/baslik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/black"
+        android:hint="Tarife İsim Ver"
+        android:background="@color/white"/>
+
+    <EditText
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/baslik"
+        android:id="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:gravity="start"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:hint="Tarif Ekle"
+        android:textColorHint="@color/black"
+        android:background="@color/white"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/kaydet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="#F2508999"
+        android:text="Kaydet"
+        android:textColor="@color/black"
+        app:backgroundTint="#F2508999" />
+
+</RelativeLayout>

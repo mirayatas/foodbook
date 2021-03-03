@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F292C2CF"
+    tools:context=".Tariflerim"
+
+
+    >
+
+    <Button
+        android:layout_marginBottom="0dp"
+        android:id="@+id/tarifekle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="TARİF EKLE"
+        app:backgroundTint="#F2508999" />
+
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/appbartariflerim"
+        android:background="@drawable/profile" />
+
+    <TextView
+        android:id="@+id/hosgeldin"
+        style="@style/Widget.MaterialComponents.TextView"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/appbartariflerim"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="@android:dimen/app_icon_size"
+        android:layout_toRightOf="@+id/profile"
+        android:text="Tariflerine Hoşgeldin"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/usrnm"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/hosgeldin"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@+id/profile"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold|italic" />
+
+    <include
+        android:id="@+id/appbartariflerim"
+        layout="@layout/appbar" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/tarifrv"
+        android:layout_below="@+id/profile"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background2"
+        />
+
+
+
+
+</RelativeLayout>
